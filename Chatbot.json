@@ -1,0 +1,6402 @@
+{
+  "version": {
+    "_version": 13.05,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [],
+    "components": [],
+    "creatorID": 226281,
+    "manualSave": false,
+    "model": {
+      "modelID": "68d583a0aeea3ad49eb7e783"
+    },
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "6797c2110cfd6c00ccbedd9f",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "I'm good",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "I think I'm good thanks",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "Under no circumstances",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Nope, not at all",
+              "slots": []
+            },
+            {
+              "text": "No way",
+              "slots": []
+            },
+            {
+              "text": "By no means",
+              "slots": []
+            },
+            {
+              "text": "Not in the slightest",
+              "slots": []
+            },
+            {
+              "text": "No chance",
+              "slots": []
+            },
+            {
+              "text": "Absolutely not",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Negative",
+              "slots": []
+            },
+            {
+              "text": "Sorry, no",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "That's wrong",
+              "slots": []
+            },
+            {
+              "text": "Incorrect",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "No",
+              "slots": []
+            }
+          ],
+          "noteID": "3hd190z8b",
+          "description": "Trigger this intent then the user responds negatively"
+        },
+        {
+          "key": "6797c2660cfd6c00ccbeddd1",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Of course",
+              "slots": []
+            },
+            {
+              "text": "Certainly",
+              "slots": []
+            },
+            {
+              "text": "Without question",
+              "slots": []
+            },
+            {
+              "text": "Sure",
+              "slots": []
+            },
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "You bet",
+              "slots": []
+            },
+            {
+              "text": "Without a doubt",
+              "slots": []
+            },
+            {
+              "text": "By all means",
+              "slots": []
+            },
+            {
+              "text": "Agreed",
+              "slots": []
+            },
+            {
+              "text": "Absolutely",
+              "slots": []
+            },
+            {
+              "text": "That's correct",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Affirmative",
+              "slots": []
+            },
+            {
+              "text": "You are right",
+              "slots": []
+            },
+            {
+              "text": "Correct",
+              "slots": []
+            },
+            {
+              "text": "Yep",
+              "slots": []
+            },
+            {
+              "text": "Yes",
+              "slots": []
+            }
+          ],
+          "noteID": "3hd1a0zmr",
+          "description": "Trigger this intent when the user responds positively."
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "globalNoMatch": {
+          "type": "static",
+          "prompt": {
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Sorry, I didn’t get that. Please try again."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "messageDelay": {
+          "durationMilliseconds": 500
+        },
+        "defaultVoice": "elevenlabs:eleven_turbo_v2_5:ZF6FPAbjXT4488VcRRnw",
+        "deepgramASR": {
+          "silenceWaitMS": 10,
+          "punctuationWaitMS": 200,
+          "partialWaitMS": 1000,
+          "interruptionWaitWords": 1,
+          "audioCue": null
+        }
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#397DFF",
+        "description": "Hi, how can I help you today?",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Your AI agent",
+        "watermark": true,
+        "audioInterface": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "agents": {
+        "68d56f0e0904a8a7a6cd3452": {
+          "name": "Gym Bot",
+          "settings": {
+            "model": "gpt-3.5-turbo",
+            "maxTokens": 256,
+            "temperature": 0.15,
+            "reasoningEffort": null
+          },
+          "cardTool": null,
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "68e763d472d621c3ae321f22",
+              "name": "Exiting",
+              "variables": [],
+              "description": "Exit/End the conversation When users types \"Exit\""
+            }
+          ],
+          "buttonTool": null,
+          "description": "",
+          "carouselTool": null,
+          "instructions": "You are Max, a dedicated fitness facility customer support AI assistant. Your primary responsibility is to provide accurate and helpful responses to user inquiries.\n\nRole and Objective\n\nYou are a customer support specialist for gym facilities.\n\nYour responses must be based exclusively on the information contained in the gym knowledge base.\n\nYou should maintain a professional, friendly, and helpful tone in all interactions.\n\nInstructions\n\nAlways begin by searching the knowledge base for relevant information before responding.\n\nOnly provide information that is explicitly present in the knowledge base.\n\nIf information is not available, politely inform the user and suggest they contact the gym directly.\n\nKeep responses clear, concise, short and focused on addressing the user's specific question.\n\nMaintain a professional yet friendly tone throughout the conversation.\n\nDo not make assumptions or provide information that isn't explicitly stated.\n\nResponse Rules\n\nStart each response by understanding the user's query and searching the knowledge base.\n\nNever tell the user that \"According to the knowledge base provided...\" anywhere in the message.\n\nStructure your responses in a clear, short and easy-to-read format.\n\nInclude relevant details from the knowledge base when applicable.\n\nIf multiple pieces of information are relevant, organize them in a logical order.\n\nAlways verify information against the knowledge base before including it in your response.\n\nOutput Format\n\nYour responses should follow this structure:\n\nDirect answer to the user's question.\n\nAdditional relevant information from the knowledge base (if applicable).\n\nNext steps or recommendations (based on knowledge base content).\n\nContact information or escalation path (if needed).\n\nIn case you are unable to find the relevant answer to the question provided in the knowledge base, provide the user with the contact details to reach the gym directly.\n\nFinal Instructions\n\nThink step by step before responding.\n\nDouble-check that your response aligns with the knowledge base.\n\nMaintain consistency in tone and information accuracy.\n\nIf unsure about any information, err on the side of caution and suggest contacting the gym directly.\n\nRemember: Your primary goal is to provide accurate, helpful information while strictly adhering to the content available in the knowledge base. Never make assumptions or provide information that isn't explicitly stated.\n",
+          "functionTools": [],
+          "webSearchTool": null,
+          "callForwardTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": true,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "mcpIntegrationTools": []
+        }
+      },
+      "prompts": {},
+      "apiTools": {},
+      "messages": {
+        "68d56e740904a8a7a6cd3319": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "What would you like to know about?"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Type \"Exit\" to exit the conversation."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68cbf6cfd4b73f0bb089f1e3": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hello! How can I help you?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da4a7b6480cb5deaa91f": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Anything else I can help you with?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da88a614195fab0e8211": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thank You! Lets talk later"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da89a614195fab0e8214": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thank You! Lets talk later"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8daa7a614195fab0e8217": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thank You! Lets talk later"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8daa7a614195fab0e821a": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thank You! Lets talk later"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8dae97b6480cb5deaa997": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Here’s our current membership plan 👇\n\nOne-Time Registration Fee: ₹1,000\n(Paid only when you join for the first time.)\n\nRegular Plan: ₹900/month\n(Access to all gym equipment and facilities.)\n\nPersonal Trainer Plan: ₹2,200/month\n(Includes one-on-one guidance with a certified trainer.)"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8db417b6480cb5deaa9b8": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Here are our gym hours 👇\n\nMonday to Saturday:\nMorning: 5:00 AM – 10:00 AM\nEvening: 4:30 PM – 10:30 PM\n\nSunday:\nClosed (maintenance & staff rest day)\n\nOur trainers are available during both morning and evening sessions.\n\nWould you like me to share the membership details as well?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81d5": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Please tell me your Gym ID or your phone number"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81d8": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Im unable to find your account. "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Are you applying for a new membership?"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81db": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Your details:"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Name: "
+                        },
+                        {
+                          "text": "{name}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Number: "
+                        },
+                        {
+                          "text": "{number}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Gym ID: "
+                        },
+                        {
+                          "text": "{id}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81de": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Is the above mentioned information correct?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81e1": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Your payment status: "
+                        },
+                        {
+                          "text": "{status}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81e4": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "You have a payment due."
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Choose the membership you would like to renew: "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "or do you want pay later?"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81e7": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Please follow this link to pay."
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81ea": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Payment is Done"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81ed": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Is there anything else i can help you with?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81f0": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "What's your Full Name?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81f3": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "What's your Phone Number?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81f6": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "What type of Membership would you like to choose?"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Normal - Description"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Express - Description"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81f9": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Name: "
+                        },
+                        {
+                          "text": "{name}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Phone Number: "
+                        },
+                        {
+                          "text": "{number}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Is the above Provided information correct?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81fc": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Please re-enter your information."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e81ff": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Please Pay Rupees ### for the Normal membership"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e8202": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Please follow this link to pay."
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e8205": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Payment is Done"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e8208": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Will Meet you in the gym."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e820b": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Thank You! Lets talk later"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68f8da1ba614195fab0e820e": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{id}"
+                        },
+                        {
+                          "text": " is not found"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Try Again"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "integrationTools": {},
+      "mcpIntegrationTools": {}
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Gym_Demo",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "platform": "webchat",
+        "slotsMap": {},
+        "extraSlots": [],
+        "cmsEntities": {},
+        "extraIntents": [],
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          },
+          "id": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "number": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "name": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "membership": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "status": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "Row_num": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "reply": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "choice": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          }
+        },
+        "usedIntentsSet": [],
+        "functionDefinitions": {},
+        "referencedAgentsIDs": [
+          "68d56f0e0904a8a7a6cd3452"
+        ],
+        "referencedPromptIDs": [],
+        "referencedAPIToolIDs": [],
+        "referencedResponseIDs": [
+          "68cbf6cfd4b73f0bb089f1e3",
+          "68d56e740904a8a7a6cd3319",
+          "68f8da1ba614195fab0e81d5",
+          "68f8da1ba614195fab0e81d8",
+          "68f8da1ba614195fab0e81db",
+          "68f8da1ba614195fab0e81de",
+          "68f8da1ba614195fab0e81e1",
+          "68f8da1ba614195fab0e81e4",
+          "68f8da1ba614195fab0e81e7",
+          "68f8da1ba614195fab0e81ea",
+          "68f8da1ba614195fab0e81ed",
+          "68f8da1ba614195fab0e81f0",
+          "68f8da1ba614195fab0e8205",
+          "68f8da1ba614195fab0e81f3",
+          "68f8da1ba614195fab0e81f6",
+          "68f8da1ba614195fab0e81f9",
+          "68f8da1ba614195fab0e81fc",
+          "68f8da1ba614195fab0e81ff",
+          "68f8da1ba614195fab0e8202",
+          "68f8da1ba614195fab0e8208",
+          "68f8da1ba614195fab0e820b",
+          "68f8da1ba614195fab0e820e",
+          "68f8da4a7b6480cb5deaa91f",
+          "68f8da88a614195fab0e8211",
+          "68f8da89a614195fab0e8214",
+          "68f8daa7a614195fab0e8217",
+          "68f8daa7a614195fab0e821a",
+          "68f8dae97b6480cb5deaa997",
+          "68f8db417b6480cb5deaa9b8"
+        ],
+        "referencedIntegrationToolIDs": [],
+        "referencedMCPIntegrationToolIDs": [],
+        "interfaces": [],
+        "permissions": [],
+        "usedEventsSet": [],
+        "goToIntentsSet": []
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "widget": {
+        "type": "chat",
+        "chat": {
+          "voiceInput": false,
+          "voiceOutput": false,
+          "renderMode": "widget",
+          "headerImage": {
+            "enabled": true,
+            "url": "https://cm4-production-assets.s3.amazonaws.com/1760008580651-vj__1_-removebg-preview.png"
+          },
+          "agentImage": {
+            "enabled": false
+          },
+          "banner": {
+            "title": "Gym Demo",
+            "description": "It’s a gym automation chatbot that instantly replies to new messages.",
+            "enabled": true
+          },
+          "placeholderText": "Message...",
+          "disclaimer": {
+            "enabled": false,
+            "title": "Privacy notice",
+            "description": "Before we can proceed with your conversation, we kindly ask you to review and accept our privacy policy, outlining how we handle and protect your personal information throughout our services.",
+            "primaryButtonText": "Submit",
+            "secondaryButtonText": "Privacy policy",
+            "secondaryButtonURL": ""
+          },
+          "aiDisclaimer": {
+            "text": "Generated by AI, double-check for accuracy.",
+            "enabled": false
+          },
+          "handoffToAgentImageURL": "",
+          "streamingDisabled": false
+        },
+        "voice": {
+          "renderMode": "full",
+          "content": {
+            "talkingText": "Talk to interrupt",
+            "endButtonText": "End",
+            "listeningText": "Listening...",
+            "startButtonText": "Start a call",
+            "callToActionText": "How can I help you?"
+          }
+        },
+        "common": {
+          "sideSpacing": "30",
+          "bottomSpacing": "30",
+          "position": "right",
+          "fontFamily": "UCity Pro",
+          "primaryColor": {
+            "color": "#510611",
+            "palette": {
+              "50": "#FDE7EA",
+              "100": "#FBD0D6",
+              "200": "#F8A0AD",
+              "300": "#F47184",
+              "400": "#F1415B",
+              "500": "#ED1232",
+              "600": "#BE0E28",
+              "700": "#8E0B1E",
+              "800": "#5F0714",
+              "900": "#2F040A"
+            }
+          },
+          "poweredBy": true,
+          "launcher": {
+            "type": "icon",
+            "text": "Test your agent"
+          },
+          "footerLink": {
+            "enabled": false
+          },
+          "persistence": "localStorage"
+        },
+        "security": {
+          "approvedDomains": {
+            "enabled": false,
+            "domains": ""
+          },
+          "disableTranscript": false
+        }
+      },
+      "memory": {
+        "turns": 25
+      },
+      "llmFallback": {
+        "models": {
+          "open-ai": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          },
+          "anthropic": {
+            "*": {
+              "provider": "open-ai",
+              "model": "gpt-4.1-2025-04-14"
+            }
+          },
+          "groq": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          },
+          "google": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          }
+        }
+      },
+      "intentClassification": {
+        "type": "rag",
+        "params": {
+          "model": "claude-3.5-haiku",
+          "temperature": 0.1
+        },
+        "promptWrapper": null
+      },
+      "voice": {
+        "failureMessage": "We’re sorry, but the call cannot be completed at this time. Please try again later.",
+        "hasCallRecording": true,
+        "tts": {
+          "provider": "elevenlabs",
+          "voice": "ZF6FPAbjXT4488VcRRnw",
+          "model": "eleven_turbo_v2_5",
+          "settings": {}
+        }
+      },
+      "globalNoMatch": {
+        "type": "static",
+        "prompt": [
+          {
+            "text": [
+              "Sorry, I didn’t get that. Please try again."
+            ]
+          }
+        ]
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "id",
+      "number",
+      "name",
+      "membership",
+      "status",
+      "Row_num",
+      "reply",
+      "choice"
+    ],
+    "_id": "68cbf0d6d4b73f0bb089ef5e",
+    "updatedAt": "2025-10-29T09:56:37.805Z",
+    "publishedAt": "2024-09-27T16:54:27.996Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 226281,
+        "updatedAt": "2025-09-18T11:45:26.608Z"
+      }
+    ],
+    "projectID": "68cbf0d6d4b73f0bb089ef5d",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {},
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1701833501,
+      "creatorID": 226281,
+      "variables": [],
+      "menuItems": [],
+      "_id": "68cbf0d6d4b73f0bb089ef60",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "68cbf0d6d4b73f0bb089ef5e"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 55.50832106214027,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "68cbf6db3a38bd3557d58bd8",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -2358.09,
+                          -164.01
+                        ]
+                      },
+                      {
+                        "point": [
+                          -2220.2,
+                          -161.42
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -2422.430573073176,
+            -186.01038556738695
+          ]
+        },
+        "68cbf6db3a38bd3557d58bd8": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68cbf6db3a38bd3557d58bda",
+                  "id": "68cbf6db3a38bd3557d58bd9",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -2220.2,
+                          -161.42
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -2244.2,
+                          -161.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          -2244.2,
+                          -98.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          -2200.18,
+                          -98.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          -2200.18,
+                          -48.76
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "68cbf6cfd4b73f0bb089f1e3"
+          },
+          "nodeID": "68cbf6db3a38bd3557d58bd8"
+        },
+        "68d572bb9373bf49c6796f4c": {
+          "type": "block",
+          "data": {
+            "name": "Greetings",
+            "steps": [
+              "68cbf6db3a38bd3557d58bd8"
+            ],
+            "color": "#56b365",
+            "triggers": []
+          },
+          "nodeID": "68d572bb9373bf49c6796f4c",
+          "coords": [
+            -2054.2033100073945,
+            -240.42192795439544
+          ]
+        },
+        "68d573b39373bf49c6796f84": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmfznklx900mm357t8c35zyos",
+                "type": "value",
+                "label": null,
+                "value": null,
+                "variableID": null
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68d573b39373bf49c6796f86"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d573b39373bf49c6796f84"
+        },
+        "68d573b39373bf49c6796f85": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "68d573b39373bf49c6796f84"
+            ]
+          },
+          "nodeID": "68d573b39373bf49c6796f85",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68d2284a343b0643eee94c75": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "68cbf8093a38bd3557d58bff",
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d2284a343b0643eee94c75"
+        },
+        "68d2284a343b0643eee94c76": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "68d2284a343b0643eee94c75"
+            ]
+          },
+          "nodeID": "68d2284a343b0643eee94c76",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68d56e75d698d11bc138f510": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68d56e740904a8a7a6cd3319",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68d56e75d698d11bc138f511",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1073.98,
+                          430.56
+                        ]
+                      },
+                      {
+                        "point": [
+                          1105.02,
+                          430.56
+                        ]
+                      },
+                      {
+                        "point": [
+                          1105.02,
+                          373.9
+                        ]
+                      },
+                      {
+                        "point": [
+                          1136.06,
+                          373.9
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d56e75d698d11bc138f510"
+        },
+        "68d56e75d698d11bc138f512": {
+          "type": "block",
+          "data": {
+            "name": "Gym Info",
+            "color": "#a19d6c",
+            "triggers": [],
+            "steps": [
+              "68d56e75d698d11bc138f510",
+              "68d56eccd698d11bc138f52b"
+            ]
+          },
+          "nodeID": "68d56e75d698d11bc138f512",
+          "coords": [
+            -1237.8057751475485,
+            -349.49091254004384
+          ]
+        },
+        "68d56eccd698d11bc138f52b": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "last_utterance"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68d56f0cd698d11bc138f53a",
+                  "id": "68d56eccd698d11bc138f52c",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1071.81,
+                          -167.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1047.81,
+                          -167.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1047.81,
+                          -117.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1237.71,
+                          -117.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1237.71,
+                          -93.53
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d56eccd698d11bc138f52b"
+        },
+        "68d56f0cd698d11bc138f539": {
+          "type": "agent",
+          "data": {
+            "name": "Gym Bot",
+            "agentID": "68d56f0e0904a8a7a6cd3452",
+            "listenForOtherTriggers": false,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "68e763d472d621c3ae321f22": {
+                  "type": "",
+                  "target": "68ece25f541f2656f2a7274d",
+                  "id": "68e763d4118cc675b1ff1fee",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d56f0cd698d11bc138f539"
+        },
+        "68d56f0cd698d11bc138f53a": {
+          "type": "block",
+          "data": {
+            "name": "New Block 13",
+            "color": "#a19d6c",
+            "triggers": [],
+            "steps": [
+              "68d56f0cd698d11bc138f539"
+            ]
+          },
+          "nodeID": "68d56f0cd698d11bc138f53a",
+          "coords": [
+            -1237.7115580437369,
+            -93.5282100712122
+          ]
+        },
+        "68ece25f541f2656f2a7274c": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "68f8da49afc0a956404067ea",
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68ece25f541f2656f2a7274c"
+        },
+        "68ece25f541f2656f2a7274d": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "68ece25f541f2656f2a7274c"
+            ]
+          },
+          "nodeID": "68ece25f541f2656f2a7274d",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68cbf6db3a38bd3557d58bda": {
+          "type": "block",
+          "data": {
+            "name": "Options",
+            "color": "#5b9fd7",
+            "triggers": [],
+            "steps": [
+              "68cbf7383a38bd3557d58bed"
+            ]
+          },
+          "nodeID": "68cbf6db3a38bd3557d58bda",
+          "coords": [
+            -2200.183092194458,
+            -48.76030152428661
+          ]
+        },
+        "68cbf7383a38bd3557d58bed": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cmfpdgizc00r7357szqoaese3",
+                "label": [
+                  {
+                    "text": [
+                      "🏋️ Membership Plans & Prices"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmh209ql4006u2v7tv5xuyv9d",
+                "label": [
+                  {
+                    "text": [
+                      "🕒 Gym Timings"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmh209yhx007h2v7to2l3hsko",
+                "label": [
+                  {
+                    "text": [
+                      "Other Queries?"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmgjblpnc010t357tdur9dsqf",
+                "label": [
+                  {
+                    "text": [
+                      "Exit"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "cmfpdgizc00r7357szqoaese3": {
+                  "type": "",
+                  "target": "68d573f59373bf49c6796f9d",
+                  "id": "68cbf7653a38bd3557d58bf2",
+                  "data": {}
+                },
+                "cmgjblpnc010t357tdur9dsqf": {
+                  "type": "",
+                  "target": "68ece1f2541f2656f2a72741",
+                  "id": "68e7991942a87732ac82083f",
+                  "data": {}
+                },
+                "cmh209ql4006u2v7tv5xuyv9d": {
+                  "type": "",
+                  "target": "68f8db50afc0a95640406875",
+                  "id": "68f8d678afc0a95640406425",
+                  "data": {}
+                },
+                "cmh209yhx007h2v7to2l3hsko": {
+                  "type": "",
+                  "target": "68f8d9f6afc0a95640406607",
+                  "id": "68f8d682afc0a95640406427",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          107.21,
+                          518.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          242.03,
+                          518.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          242.03,
+                          488.84
+                        ]
+                      },
+                      {
+                        "point": [
+                          376.86,
+                          488.84
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68cbf7383a38bd3557d58bed",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68d573f59373bf49c6796f9c": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "68f8dadeafc0a95640406865",
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68d573f59373bf49c6796f9c"
+        },
+        "68d573f59373bf49c6796f9d": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "68d573f59373bf49c6796f9c"
+            ]
+          },
+          "nodeID": "68d573f59373bf49c6796f9d",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68ece1f2541f2656f2a72740": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "68f8da88afc0a9564040680b",
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68ece1f2541f2656f2a72740"
+        },
+        "68ece1f2541f2656f2a72741": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "68ece1f2541f2656f2a72740"
+            ]
+          },
+          "nodeID": "68ece1f2541f2656f2a72741",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68f8d9f6afc0a95640406606": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "68d56e75d698d11bc138f512",
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8d9f6afc0a95640406606"
+        },
+        "68f8d9f6afc0a95640406607": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68f8d9f6afc0a95640406606"
+            ]
+          },
+          "nodeID": "68f8d9f6afc0a95640406607",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68f8da1bafc0a9564040663f": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cmfzp5br102c0357tqfxiqg9t",
+                "label": [
+                  {
+                    "text": [
+                      "Normal"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmfzp5fll02cd357t1h8uqt93",
+                "label": [
+                  {
+                    "text": [
+                      "Express"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "cmfzp5br102c0357tqfxiqg9t": {
+                  "type": "",
+                  "target": "68f8da1bafc0a95640406659",
+                  "id": "68f8da1bafc0a95640406640"
+                },
+                "cmfzp5fll02cd357t1h8uqt93": {
+                  "type": "",
+                  "target": "68f8da1bafc0a9564040665b",
+                  "id": "68f8da1bafc0a95640406641"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8da1bafc0a9564040663f",
+          "coords": [
+            764.1052314889209,
+            -850.816256961526
+          ]
+        },
+        "68f8da1bafc0a95640406659": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68f8da1bafc0a956404066da"
+            ]
+          },
+          "nodeID": "68f8da1bafc0a95640406659",
+          "coords": [
+            3041.524586327629,
+            -854.0420634131384
+          ]
+        },
+        "68f8da1bafc0a9564040665b": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68f8da1bafc0a956404066dc"
+            ]
+          },
+          "nodeID": "68f8da1bafc0a9564040665b",
+          "coords": [
+            3041.524586327629,
+            -854.0420634131384
+          ]
+        },
+        "68f8da1bafc0a956404066da": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmfzp5r4o02db357to2vrme55",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "Normal"
+                    ]
+                  }
+                ],
+                "variableID": "68cc05dde763d8103577c624"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68f8da1bafc0a956404066d9",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          4538.534586327629,
+                          5.557936586861587
+                        ]
+                      },
+                      {
+                        "point": [
+                          4638.664586327629,
+                          5.557936586861587
+                        ]
+                      },
+                      {
+                        "point": [
+                          4638.664586327629,
+                          76.93793658686158
+                        ]
+                      },
+                      {
+                        "point": [
+                          4738.804586327629,
+                          76.93793658686158
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8da1bafc0a956404066da"
+        },
+        "68f8da1bafc0a956404066dc": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmfzp60ac02dq357takqt55aq",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "Express"
+                    ]
+                  }
+                ],
+                "variableID": "68cc05dde763d8103577c624"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68f8da1bafc0a956404066db",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          4541.73458632763,
+                          59.80793658686159
+                        ]
+                      },
+                      {
+                        "point": [
+                          4640.264586327629,
+                          59.80793658686159
+                        ]
+                      },
+                      {
+                        "point": [
+                          4640.264586327629,
+                          76.93793658686158
+                        ]
+                      },
+                      {
+                        "point": [
+                          4738.804586327629,
+                          76.93793658686158
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8da1bafc0a956404066dc"
+        },
+        "68f8da49afc0a956404067e8": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68f8da4a7b6480cb5deaa91f",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68cbf6db3a38bd3557d58bda",
+                  "id": "68f8da49afc0a956404067e9",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -2220.05,
+                          405.99
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -2389.18,
+                          405.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          -2389.18,
+                          -21.76
+                        ]
+                      },
+                      {
+                        "point": [
+                          -2365.18,
+                          -21.76
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8da49afc0a956404067e8"
+        },
+        "68f8da49afc0a956404067ea": {
+          "type": "block",
+          "data": {
+            "name": "Anything Else?",
+            "steps": [
+              "68f8da49afc0a956404067e8"
+            ],
+            "color": "#56b365"
+          },
+          "nodeID": "68f8da49afc0a956404067ea",
+          "coords": [
+            -2054.047716082448,
+            318.9920051901034
+          ]
+        },
+        "68f8da88afc0a9564040680b": {
+          "type": "block",
+          "data": {
+            "name": "End-Statement",
+            "color": "#d58493",
+            "triggers": [],
+            "steps": [
+              "68f8da88afc0a9564040680f"
+            ]
+          },
+          "nodeID": "68f8da88afc0a9564040680b",
+          "coords": [
+            -1239.6744514936443,
+            284.1617398661224
+          ]
+        },
+        "68f8da88afc0a9564040680d": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "68f8da88afc0a95640406811"
+            ]
+          },
+          "nodeID": "68f8da88afc0a9564040680d",
+          "coords": [
+            -1921.1669576426575,
+            22.754138731925877
+          ]
+        },
+        "68f8da88afc0a9564040680f": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68f8da89a614195fab0e8214",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68f8da88afc0a9564040680d",
+                  "id": "68f8da88afc0a95640406810",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8da88afc0a9564040680f"
+        },
+        "68f8da88afc0a95640406811": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8da88afc0a95640406811"
+        },
+        "68f8dadeafc0a95640406863": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68f8da49afc0a956404067ea",
+                  "id": "68f8dadeafc0a95640406864",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1804.07,
+                          -147.6
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -1846.56,
+                          -147.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1846.56,
+                          345.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1889.05,
+                          345.99
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "68f8dae97b6480cb5deaa997"
+          },
+          "nodeID": "68f8dadeafc0a95640406863"
+        },
+        "68f8dadeafc0a95640406865": {
+          "type": "block",
+          "data": {
+            "name": "Membership Details",
+            "steps": [
+              "68f8dadeafc0a95640406863"
+            ],
+            "color": "#dc8879"
+          },
+          "nodeID": "68f8dadeafc0a95640406865",
+          "coords": [
+            -1638.0668662234937,
+            -363.0968975776222
+          ]
+        },
+        "68f8db41afc0a9564040686c": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68f8db417b6480cb5deaa9b8",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68f8db41afc0a9564040686d"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8db41afc0a9564040686c"
+        },
+        "68f8db41afc0a9564040686e": {
+          "type": "block",
+          "data": {
+            "name": "Timing",
+            "steps": [
+              "68f8db41afc0a9564040686c",
+              "68f8db63afc0a9564040687a"
+            ],
+            "color": "#9b94ce"
+          },
+          "nodeID": "68f8db41afc0a9564040686e",
+          "coords": [
+            -1642.7395297995656,
+            83.79563701226829
+          ]
+        },
+        "68f8db50afc0a95640406874": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "68f8db41afc0a9564040686e",
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8db50afc0a95640406874"
+        },
+        "68f8db50afc0a95640406875": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "68f8db50afc0a95640406874"
+            ]
+          },
+          "nodeID": "68f8db50afc0a95640406875",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68f8db63afc0a9564040687a": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cmh210se8013z2v7tlfgajj6v",
+                "label": [
+                  {
+                    "text": [
+                      "Yes"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmh210u9b01492v7tqb86y4u0",
+                "label": [
+                  {
+                    "text": [
+                      "No"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "cmh210se8013z2v7tlfgajj6v": {
+                  "id": "68f8db66afc0a9564040687d",
+                  "target": "68f8dadeafc0a95640406865",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1476.74,
+                          493.05
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1449.07,
+                          493.05
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1449.07,
+                          -336.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1473.07,
+                          -336.1
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "cmh210u9b01492v7tqb86y4u0": {
+                  "id": "68f8db69afc0a9564040687f",
+                  "target": "68fa08753777def110607f0e",
+                  "type": "",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68f8db63afc0a9564040687a",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68fa08753777def110607f0d": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "68f8da49afc0a956404067ea",
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68fa08753777def110607f0d"
+        },
+        "68fa08753777def110607f0e": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "68fa08753777def110607f0d"
+            ]
+          },
+          "nodeID": "68fa08753777def110607f0e",
+          "coords": [
+            0,
+            0
+          ]
+        }
+      },
+      "offsetX": 1812.6658931752984,
+      "offsetY": 353.41401238962067,
+      "modified": 1701833501,
+      "creatorID": 226281,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "68cbf0d6d4b73f0bb089ef61",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "68cbf0d6d4b73f0bb089ef5e"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 226281,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedd9f",
+      "name": "No",
+      "createdByID": 226281,
+      "folderID": null,
+      "description": "Trigger this intent then the user responds negatively",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd1",
+      "name": "Yes",
+      "createdByID": 226281,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds positively.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    }
+  ],
+  "utterances": [
+    {
+      "id": "6797c2110cfd6c00ccbedda0",
+      "text": [
+        {
+          "text": [
+            "I'm good"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda1",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda2",
+      "text": [
+        {
+          "text": [
+            "I think I'm good thanks"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda3",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda4",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda5",
+      "text": [
+        {
+          "text": [
+            "Under no circumstances"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda6",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda7",
+      "text": [
+        {
+          "text": [
+            "Nope, not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda8",
+      "text": [
+        {
+          "text": [
+            "No way"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda9",
+      "text": [
+        {
+          "text": [
+            "By no means"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaa",
+      "text": [
+        {
+          "text": [
+            "Not in the slightest"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddab",
+      "text": [
+        {
+          "text": [
+            "No chance"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddac",
+      "text": [
+        {
+          "text": [
+            "Absolutely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddad",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddae",
+      "text": [
+        {
+          "text": [
+            "Negative"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaf",
+      "text": [
+        {
+          "text": [
+            "Sorry, no"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb0",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb1",
+      "text": [
+        {
+          "text": [
+            "That's wrong"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb2",
+      "text": [
+        {
+          "text": [
+            "Incorrect"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb3",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb4",
+      "text": [
+        {
+          "text": [
+            "No"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd2",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd3",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd4",
+      "text": [
+        {
+          "text": [
+            "Of course"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd5",
+      "text": [
+        {
+          "text": [
+            "Certainly"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd6",
+      "text": [
+        {
+          "text": [
+            "Without question"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd7",
+      "text": [
+        {
+          "text": [
+            "Sure"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd8",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd9",
+      "text": [
+        {
+          "text": [
+            "You bet"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddda",
+      "text": [
+        {
+          "text": [
+            "Without a doubt"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddb",
+      "text": [
+        {
+          "text": [
+            "By all means"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddc",
+      "text": [
+        {
+          "text": [
+            "Agreed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddd",
+      "text": [
+        {
+          "text": [
+            "Absolutely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddde",
+      "text": [
+        {
+          "text": [
+            "That's correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddf",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde0",
+      "text": [
+        {
+          "text": [
+            "Affirmative"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde1",
+      "text": [
+        {
+          "text": [
+            "You are right"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c3060cfd6c00ccbede5c",
+      "text": [
+        {
+          "text": [
+            "Correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c3080cfd6c00ccbede5d",
+      "text": [
+        {
+          "text": [
+            "Yep"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    },
+    {
+      "id": "6797c3090cfd6c00ccbede5e",
+      "text": [
+        {
+          "text": [
+            "Yes"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-09-18T11:45:27.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "68d13269711621df57417fcf",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-22T11:26:33.000Z",
+      "updatedAt": "2025-09-22T11:27:11.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d134a2711621df57418168",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-22T11:36:03.000Z",
+      "updatedAt": "2025-09-22T11:36:40.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d1339a711621df5741809b",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-22T11:31:38.000Z",
+      "updatedAt": "2025-09-22T11:31:39.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d1340e711621df574180ea",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-22T11:33:35.000Z",
+      "updatedAt": "2025-09-22T11:33:57.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d13549711621df57418211",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-22T11:38:50.000Z",
+      "updatedAt": "2025-09-22T11:39:36.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d136f7711621df574183c2",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-22T11:46:00.000Z",
+      "updatedAt": "2025-09-22T11:46:03.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68e7960472d621c3ae322a68",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-09T11:01:24.000Z",
+      "updatedAt": "2025-10-09T11:01:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68e79636125c3775f6d936f4",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-09T11:02:14.000Z",
+      "updatedAt": "2025-10-09T11:02:14.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68e7964572d621c3ae322a93",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-09T11:02:29.000Z",
+      "updatedAt": "2025-10-09T11:02:34.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68e7968972d621c3ae322ab1",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-09T11:03:38.000Z",
+      "updatedAt": "2025-10-09T11:03:51.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68e7992872d621c3ae322b75",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-09T11:14:49.000Z",
+      "updatedAt": "2025-10-09T11:15:03.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68e79fea72d621c3ae322d85",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-09T11:43:38.000Z",
+      "updatedAt": "2025-10-09T11:44:16.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d3fa8391c5ab19193c59a9",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-24T14:04:52.000Z",
+      "updatedAt": "2025-09-24T14:04:56.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d3faa391c5ab19193c59d8",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-24T14:05:24.000Z",
+      "updatedAt": "2025-09-24T14:05:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d4041d91c5ab19193c6048",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-24T14:45:50.000Z",
+      "updatedAt": "2025-09-24T14:45:56.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d56e740904a8a7a6cd3319",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T16:31:49.000Z",
+      "updatedAt": "2025-09-25T16:32:11.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d56ef50904a8a7a6cd3439",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T16:33:57.000Z",
+      "updatedAt": "2025-09-25T16:34:03.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d572850904a8a7a6cd3846",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T16:49:10.000Z",
+      "updatedAt": "2025-09-25T16:49:15.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d578e90904a8a7a6cd3c4b",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T17:16:26.000Z",
+      "updatedAt": "2025-09-25T17:16:59.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d5793473eb39bd5ea71b92",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T17:17:40.000Z",
+      "updatedAt": "2025-09-25T17:17:40.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d5793c73eb39bd5ea71b95",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T17:17:48.000Z",
+      "updatedAt": "2025-09-25T17:17:48.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d5794373eb39bd5ea71b98",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T17:17:55.000Z",
+      "updatedAt": "2025-09-25T17:17:55.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d5795773eb39bd5ea71b9b",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T17:18:15.000Z",
+      "updatedAt": "2025-09-25T17:18:15.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d579a90904a8a7a6cd3cbe",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T17:19:37.000Z",
+      "updatedAt": "2025-09-25T17:20:03.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d579e60904a8a7a6cd3cd9",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-25T17:20:38.000Z",
+      "updatedAt": "2025-09-25T17:20:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cbf65dd4b73f0bb089f1a3",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2025-09-18T12:09:02.000Z",
+      "updatedAt": "2025-09-18T12:09:02.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cbf6cfd4b73f0bb089f1e3",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-18T12:10:56.000Z",
+      "updatedAt": "2025-09-18T12:11:05.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cbf71dd4b73f0bb089f213",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2025-09-18T12:12:13.000Z",
+      "updatedAt": "2025-09-18T12:12:13.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cbf7ffd4b73f0bb089f29e",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-18T12:15:59.000Z",
+      "updatedAt": "2025-09-18T12:16:49.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cc02cbe763d8103577c4b3",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-18T13:02:04.000Z",
+      "updatedAt": "2025-09-18T13:02:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cc0408e763d8103577c544",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2025-09-18T13:07:21.000Z",
+      "updatedAt": "2025-09-18T13:07:21.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cc0689e763d8103577c652",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-09-18T13:18:02.000Z",
+      "updatedAt": "2025-09-18T13:18:16.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da4a7b6480cb5deaa91f",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:21:14.000Z",
+      "updatedAt": "2025-10-22T13:21:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da88a614195fab0e8211",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:22:16.000Z",
+      "updatedAt": "2025-10-22T13:22:16.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da89a614195fab0e8214",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:22:17.000Z",
+      "updatedAt": "2025-10-22T13:22:17.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8daa8a614195fab0e821d",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:22:48.000Z",
+      "updatedAt": "2025-10-22T13:22:48.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8daa8a614195fab0e8220",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:22:49.000Z",
+      "updatedAt": "2025-10-22T13:22:49.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8daa7a614195fab0e8217",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:22:47.000Z",
+      "updatedAt": "2025-10-22T13:22:47.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8daa7a614195fab0e821a",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:22:48.000Z",
+      "updatedAt": "2025-10-22T13:22:48.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8dae97b6480cb5deaa997",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:23:54.000Z",
+      "updatedAt": "2025-10-22T13:24:32.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8db417b6480cb5deaa9b8",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:25:22.000Z",
+      "updatedAt": "2025-10-22T13:25:26.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81d5",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81d8",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81db",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81de",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e1",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e4",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e7",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81ea",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81ed",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f0",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f3",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f6",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f9",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81fc",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e81ff",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e8202",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e8205",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e8208",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e820b",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68f8da1ba614195fab0e820e",
+      "name": "",
+      "createdByID": 226281,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-10-22T13:20:28.000Z",
+      "updatedAt": "2025-10-22T13:20:28.000Z",
+      "updatedByID": 226281
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "68cbf65dd4b73f0bb089f1a5",
+      "discriminatorID": "68cbf65dd4b73f0bb089f1a4",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-18T12:09:02.000Z"
+    },
+    {
+      "id": "68cc0408e763d8103577c546",
+      "discriminatorID": "68cc0408e763d8103577c545",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-18T13:07:21.000Z"
+    },
+    {
+      "id": "68d136f7711621df574183c4",
+      "discriminatorID": "68d136f7711621df574183c3",
+      "text": [
+        {
+          "text": [
+            "Is there anything else i can help you with?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-22T11:46:00.000Z"
+    },
+    {
+      "id": "68d1340e711621df574180ec",
+      "discriminatorID": "68d1340e711621df574180eb",
+      "text": [
+        {
+          "text": [
+            "You have a payment due."
+          ]
+        },
+        {
+          "text": [
+            "Choose the membership you would like to renew: "
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "or do you want pay later?"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-22T11:33:35.000Z"
+    },
+    {
+      "id": "68d1339a711621df5741809d",
+      "discriminatorID": "68d1339a711621df5741809c",
+      "text": [
+        {
+          "text": [
+            "Your payment status: ",
+            {
+              "variableID": "68cc05f6e763d8103577c629"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-22T11:31:38.000Z"
+    },
+    {
+      "id": "68d13269711621df57417fd1",
+      "discriminatorID": "68d13269711621df57417fd0",
+      "text": [
+        {
+          "text": [
+            "Is the above mentioned information correct?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-22T11:26:33.000Z"
+    },
+    {
+      "id": "68d13549711621df57418213",
+      "discriminatorID": "68d13549711621df57418212",
+      "text": [
+        {
+          "text": [
+            "Payment is Done"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-22T11:38:50.000Z"
+    },
+    {
+      "id": "68e7964572d621c3ae322a95",
+      "discriminatorID": "68e7964572d621c3ae322a94",
+      "text": [
+        {
+          "text": [
+            "Payment is Done"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-09T11:02:29.000Z"
+    },
+    {
+      "id": "68e7968972d621c3ae322ab3",
+      "discriminatorID": "68e7968972d621c3ae322ab2",
+      "text": [
+        {
+          "text": [
+            "Will Meet you in the gym."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-09T11:03:38.000Z"
+    },
+    {
+      "id": "68e7960472d621c3ae322a6a",
+      "discriminatorID": "68e7960472d621c3ae322a69",
+      "text": [
+        {
+          "text": [
+            "Please Pay Rupees ### for the Normal membership"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-09T11:01:24.000Z"
+    },
+    {
+      "id": "68e79636125c3775f6d936f6",
+      "discriminatorID": "68e79636125c3775f6d936f5",
+      "text": [
+        {
+          "text": [
+            "Please follow this link to pay."
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-09T11:02:14.000Z"
+    },
+    {
+      "id": "68d134a2711621df5741816a",
+      "discriminatorID": "68d134a2711621df57418169",
+      "text": [
+        {
+          "text": [
+            "Please follow this link to pay."
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-22T11:36:03.000Z"
+    },
+    {
+      "id": "68e7992872d621c3ae322b77",
+      "discriminatorID": "68e7992872d621c3ae322b76",
+      "text": [
+        {
+          "text": [
+            "Thank You! Lets talk later"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-09T11:14:49.000Z"
+    },
+    {
+      "id": "68e79fea72d621c3ae322d87",
+      "discriminatorID": "68e79fea72d621c3ae322d86",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "68cbf84fd4b73f0bb089f2ad"
+            },
+            " is not found"
+          ]
+        },
+        {
+          "text": [
+            "Try Again"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-09T11:43:38.000Z"
+    },
+    {
+      "id": "68d3fa8391c5ab19193c59ab",
+      "discriminatorID": "68d3fa8391c5ab19193c59aa",
+      "text": [
+        {
+          "text": [
+            "ROw Number"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-24T14:04:52.000Z"
+    },
+    {
+      "id": "68d3faa391c5ab19193c59da",
+      "discriminatorID": "68d3faa391c5ab19193c59d9",
+      "text": [
+        {
+          "text": [
+            "DeaD"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-24T14:05:24.000Z"
+    },
+    {
+      "id": "68d4041d91c5ab19193c604a",
+      "discriminatorID": "68d4041d91c5ab19193c6049",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "68d226a861b366a3ec77642a"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-24T14:45:50.000Z"
+    },
+    {
+      "id": "68d579a90904a8a7a6cd3cc0",
+      "discriminatorID": "68d579a90904a8a7a6cd3cbf",
+      "text": [
+        {
+          "text": [
+            "Name: ",
+            {
+              "variableID": "68cc05c1e763d8103577c622"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Phone Number: ",
+            {
+              "variableID": "68cc0168e763d8103577c42d"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Is the above Provided information correct?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T17:19:37.000Z"
+    },
+    {
+      "id": "68d579e60904a8a7a6cd3cdb",
+      "discriminatorID": "68d579e60904a8a7a6cd3cda",
+      "text": [
+        {
+          "text": [
+            "Please re-enter your information."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T17:20:38.000Z"
+    },
+    {
+      "id": "68d56e740904a8a7a6cd331b",
+      "discriminatorID": "68d56e740904a8a7a6cd331a",
+      "text": [
+        {
+          "text": [
+            "What would you like to know about?"
+          ]
+        },
+        {
+          "text": [
+            "Type \"Exit\" to exit the conversation."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T16:31:49.000Z"
+    },
+    {
+      "id": "68d56ef50904a8a7a6cd343b",
+      "discriminatorID": "68d56ef50904a8a7a6cd343a",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "68d56ede0904a8a7a6cd341c"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T16:33:57.000Z"
+    },
+    {
+      "id": "68d572850904a8a7a6cd3848",
+      "discriminatorID": "68d572850904a8a7a6cd3847",
+      "text": [
+        {
+          "text": [
+            "More questions?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T16:49:10.000Z"
+    },
+    {
+      "id": "68d578e90904a8a7a6cd3c4d",
+      "discriminatorID": "68d578e90904a8a7a6cd3c4c",
+      "text": [
+        {
+          "text": [
+            "What's your Full Name?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T17:16:26.000Z"
+    },
+    {
+      "id": "68d5793473eb39bd5ea71b94",
+      "discriminatorID": "68d5793473eb39bd5ea71b93",
+      "text": [
+        {
+          "text": [
+            "What's your Full Name?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T17:17:40.000Z"
+    },
+    {
+      "id": "68d5793c73eb39bd5ea71b97",
+      "discriminatorID": "68d5793c73eb39bd5ea71b96",
+      "text": [
+        {
+          "text": [
+            "What's your Full Name?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T17:17:48.000Z"
+    },
+    {
+      "id": "68d5794373eb39bd5ea71b9a",
+      "discriminatorID": "68d5794373eb39bd5ea71b99",
+      "text": [
+        {
+          "text": [
+            "What's your Phone Number?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T17:17:55.000Z"
+    },
+    {
+      "id": "68d5795773eb39bd5ea71b9d",
+      "discriminatorID": "68d5795773eb39bd5ea71b9c",
+      "text": [
+        {
+          "text": [
+            "What type of Membership would you like to choose?"
+          ]
+        },
+        {
+          "text": [
+            "Normal - Description"
+          ]
+        },
+        {
+          "text": [
+            "Express - Description"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-25T17:18:15.000Z"
+    },
+    {
+      "id": "68cbf6cfd4b73f0bb089f1e5",
+      "discriminatorID": "68cbf6cfd4b73f0bb089f1e4",
+      "text": [
+        {
+          "text": [
+            "Hello! How can I help you?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-18T12:10:56.000Z"
+    },
+    {
+      "id": "68cbf71dd4b73f0bb089f215",
+      "discriminatorID": "68cbf71dd4b73f0bb089f214",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-18T12:12:13.000Z"
+    },
+    {
+      "id": "68cbf7ffd4b73f0bb089f2a0",
+      "discriminatorID": "68cbf7ffd4b73f0bb089f29f",
+      "text": [
+        {
+          "text": [
+            "Please tell me your Gym ID or your phone number"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-18T12:15:59.000Z"
+    },
+    {
+      "id": "68cc02cbe763d8103577c4b5",
+      "discriminatorID": "68cc02cbe763d8103577c4b4",
+      "text": [
+        {
+          "text": [
+            "Im unable to find your account. "
+          ]
+        },
+        {
+          "text": [
+            "Are you applying for a new membership?"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-18T13:02:04.000Z"
+    },
+    {
+      "id": "68cc0689e763d8103577c654",
+      "discriminatorID": "68cc0689e763d8103577c653",
+      "text": [
+        {
+          "text": [
+            "Your details:"
+          ]
+        },
+        {
+          "text": [
+            "Name: ",
+            {
+              "variableID": "68cc05c1e763d8103577c622"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Number: ",
+            {
+              "variableID": "68cc0168e763d8103577c42d"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Gym ID: ",
+            {
+              "variableID": "68cbf84fd4b73f0bb089f2ad"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-09-18T13:18:02.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81d7",
+      "discriminatorID": "68f8da1ba614195fab0e81d6",
+      "text": [
+        {
+          "text": [
+            "Please tell me your Gym ID or your phone number"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81da",
+      "discriminatorID": "68f8da1ba614195fab0e81d9",
+      "text": [
+        {
+          "text": [
+            "Im unable to find your account. "
+          ]
+        },
+        {
+          "text": [
+            "Are you applying for a new membership?"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81dd",
+      "discriminatorID": "68f8da1ba614195fab0e81dc",
+      "text": [
+        {
+          "text": [
+            "Your details:"
+          ]
+        },
+        {
+          "text": [
+            "Name: ",
+            {
+              "variableID": "68cc05c1e763d8103577c622"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Number: ",
+            {
+              "variableID": "68cc0168e763d8103577c42d"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Gym ID: ",
+            {
+              "variableID": "68cbf84fd4b73f0bb089f2ad"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e0",
+      "discriminatorID": "68f8da1ba614195fab0e81df",
+      "text": [
+        {
+          "text": [
+            "Is the above mentioned information correct?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e3",
+      "discriminatorID": "68f8da1ba614195fab0e81e2",
+      "text": [
+        {
+          "text": [
+            "Your payment status: ",
+            {
+              "variableID": "68cc05f6e763d8103577c629"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e6",
+      "discriminatorID": "68f8da1ba614195fab0e81e5",
+      "text": [
+        {
+          "text": [
+            "You have a payment due."
+          ]
+        },
+        {
+          "text": [
+            "Choose the membership you would like to renew: "
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "or do you want pay later?"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e9",
+      "discriminatorID": "68f8da1ba614195fab0e81e8",
+      "text": [
+        {
+          "text": [
+            "Please follow this link to pay."
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81ec",
+      "discriminatorID": "68f8da1ba614195fab0e81eb",
+      "text": [
+        {
+          "text": [
+            "Payment is Done"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81ef",
+      "discriminatorID": "68f8da1ba614195fab0e81ee",
+      "text": [
+        {
+          "text": [
+            "Is there anything else i can help you with?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f2",
+      "discriminatorID": "68f8da1ba614195fab0e81f1",
+      "text": [
+        {
+          "text": [
+            "What's your Full Name?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f5",
+      "discriminatorID": "68f8da1ba614195fab0e81f4",
+      "text": [
+        {
+          "text": [
+            "What's your Phone Number?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f8",
+      "discriminatorID": "68f8da1ba614195fab0e81f7",
+      "text": [
+        {
+          "text": [
+            "What type of Membership would you like to choose?"
+          ]
+        },
+        {
+          "text": [
+            "Normal - Description"
+          ]
+        },
+        {
+          "text": [
+            "Express - Description"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81fb",
+      "discriminatorID": "68f8da1ba614195fab0e81fa",
+      "text": [
+        {
+          "text": [
+            "Name: ",
+            {
+              "variableID": "68cc05c1e763d8103577c622"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            "Phone Number: ",
+            {
+              "variableID": "68cc0168e763d8103577c42d"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Is the above Provided information correct?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81fe",
+      "discriminatorID": "68f8da1ba614195fab0e81fd",
+      "text": [
+        {
+          "text": [
+            "Please re-enter your information."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e8201",
+      "discriminatorID": "68f8da1ba614195fab0e8200",
+      "text": [
+        {
+          "text": [
+            "Please Pay Rupees ### for the Normal membership"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e8204",
+      "discriminatorID": "68f8da1ba614195fab0e8203",
+      "text": [
+        {
+          "text": [
+            "Please follow this link to pay."
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e8207",
+      "discriminatorID": "68f8da1ba614195fab0e8206",
+      "text": [
+        {
+          "text": [
+            "Payment is Done"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e820a",
+      "discriminatorID": "68f8da1ba614195fab0e8209",
+      "text": [
+        {
+          "text": [
+            "Will Meet you in the gym."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e820d",
+      "discriminatorID": "68f8da1ba614195fab0e820c",
+      "text": [
+        {
+          "text": [
+            "Thank You! Lets talk later"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e8210",
+      "discriminatorID": "68f8da1ba614195fab0e820f",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "68cbf84fd4b73f0bb089f2ad"
+            },
+            " is not found"
+          ]
+        },
+        {
+          "text": [
+            "Try Again"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da4a7b6480cb5deaa921",
+      "discriminatorID": "68f8da4a7b6480cb5deaa920",
+      "text": [
+        {
+          "text": [
+            "Anything else I can help you with?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:21:14.000Z"
+    },
+    {
+      "id": "68f8da88a614195fab0e8213",
+      "discriminatorID": "68f8da88a614195fab0e8212",
+      "text": [
+        {
+          "text": [
+            "Thank You! Lets talk later"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:22:16.000Z"
+    },
+    {
+      "id": "68f8da89a614195fab0e8216",
+      "discriminatorID": "68f8da89a614195fab0e8215",
+      "text": [
+        {
+          "text": [
+            "Thank You! Lets talk later"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:22:17.000Z"
+    },
+    {
+      "id": "68f8daa8a614195fab0e821f",
+      "discriminatorID": "68f8daa8a614195fab0e821e",
+      "text": [
+        {
+          "text": [
+            "Thank You! Lets talk later"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:22:48.000Z"
+    },
+    {
+      "id": "68f8daa8a614195fab0e8222",
+      "discriminatorID": "68f8daa8a614195fab0e8221",
+      "text": [
+        {
+          "text": [
+            "Thank You! Lets talk later"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:22:49.000Z"
+    },
+    {
+      "id": "68f8daa7a614195fab0e8219",
+      "discriminatorID": "68f8daa7a614195fab0e8218",
+      "text": [
+        {
+          "text": [
+            "Thank You! Lets talk later"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:22:47.000Z"
+    },
+    {
+      "id": "68f8daa7a614195fab0e821c",
+      "discriminatorID": "68f8daa7a614195fab0e821b",
+      "text": [
+        {
+          "text": [
+            "Thank You! Lets talk later"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:22:48.000Z"
+    },
+    {
+      "id": "68f8dae97b6480cb5deaa999",
+      "discriminatorID": "68f8dae97b6480cb5deaa998",
+      "text": [
+        {
+          "text": [
+            "Here’s our current membership plan 👇\n\nOne-Time Registration Fee: ₹1,000\n(Paid only when you join for the first time.)\n\nRegular Plan: ₹900/month\n(Access to all gym equipment and facilities.)\n\nPersonal Trainer Plan: ₹2,200/month\n(Includes one-on-one guidance with a certified trainer.)"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:23:54.000Z"
+    },
+    {
+      "id": "68f8db417b6480cb5deaa9ba",
+      "discriminatorID": "68f8db417b6480cb5deaa9b9",
+      "text": [
+        {
+          "text": [
+            "Here are our gym hours 👇\n\nMonday to Saturday:\nMorning: 5:00 AM – 10:00 AM\nEvening: 4:30 PM – 10:30 PM\n\nSunday:\nClosed (maintenance & staff rest day)\n\nOur trainers are available during both morning and evening sessions.\n\nWould you like me to share the membership details as well?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-10-22T13:25:22.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "68cbf65dd4b73f0bb089f1a4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68cbf65dd4b73f0bb089f1a3",
+      "variantOrder": [
+        "68cbf65dd4b73f0bb089f1a5"
+      ],
+      "createdAt": "2025-09-18T12:09:02.000Z"
+    },
+    {
+      "id": "68cbf6cfd4b73f0bb089f1e4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68cbf6cfd4b73f0bb089f1e3",
+      "variantOrder": [
+        "68cbf6cfd4b73f0bb089f1e5"
+      ],
+      "createdAt": "2025-09-18T12:10:56.000Z"
+    },
+    {
+      "id": "68cbf71dd4b73f0bb089f214",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68cbf71dd4b73f0bb089f213",
+      "variantOrder": [
+        "68cbf71dd4b73f0bb089f215"
+      ],
+      "createdAt": "2025-09-18T12:12:13.000Z"
+    },
+    {
+      "id": "68cbf7ffd4b73f0bb089f29f",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68cbf7ffd4b73f0bb089f29e",
+      "variantOrder": [
+        "68cbf7ffd4b73f0bb089f2a0"
+      ],
+      "createdAt": "2025-09-18T12:15:59.000Z"
+    },
+    {
+      "id": "68cc02cbe763d8103577c4b4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68cc02cbe763d8103577c4b3",
+      "variantOrder": [
+        "68cc02cbe763d8103577c4b5"
+      ],
+      "createdAt": "2025-09-18T13:02:04.000Z"
+    },
+    {
+      "id": "68cc0689e763d8103577c653",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68cc0689e763d8103577c652",
+      "variantOrder": [
+        "68cc0689e763d8103577c654"
+      ],
+      "createdAt": "2025-09-18T13:18:02.000Z"
+    },
+    {
+      "id": "68cc0408e763d8103577c545",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68cc0408e763d8103577c544",
+      "variantOrder": [
+        "68cc0408e763d8103577c546"
+      ],
+      "createdAt": "2025-09-18T13:07:21.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81d6",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81d5",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81d7"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81d9",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81d8",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81da"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81dc",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81db",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81dd"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81df",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81de",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81e0"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e2",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81e1",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81e3"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e5",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81e4",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81e6"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81e8",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81e7",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81e9"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81eb",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81ea",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81ec"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81ee",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81ed",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81ef"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f1",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81f0",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81f2"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81f3",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81f5"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81f7",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81f6",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81f8"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81fa",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81f9",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81fb"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e81fd",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81fc",
+      "variantOrder": [
+        "68f8da1ba614195fab0e81fe"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e8200",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e81ff",
+      "variantOrder": [
+        "68f8da1ba614195fab0e8201"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e8203",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e8202",
+      "variantOrder": [
+        "68f8da1ba614195fab0e8204"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e8206",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e8205",
+      "variantOrder": [
+        "68f8da1ba614195fab0e8207"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e8209",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e8208",
+      "variantOrder": [
+        "68f8da1ba614195fab0e820a"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e820c",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e820b",
+      "variantOrder": [
+        "68f8da1ba614195fab0e820d"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da1ba614195fab0e820f",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da1ba614195fab0e820e",
+      "variantOrder": [
+        "68f8da1ba614195fab0e8210"
+      ],
+      "createdAt": "2025-10-22T13:20:28.000Z"
+    },
+    {
+      "id": "68f8da4a7b6480cb5deaa920",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da4a7b6480cb5deaa91f",
+      "variantOrder": [
+        "68f8da4a7b6480cb5deaa921"
+      ],
+      "createdAt": "2025-10-22T13:21:14.000Z"
+    },
+    {
+      "id": "68f8da88a614195fab0e8212",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da88a614195fab0e8211",
+      "variantOrder": [
+        "68f8da88a614195fab0e8213"
+      ],
+      "createdAt": "2025-10-22T13:22:16.000Z"
+    },
+    {
+      "id": "68f8da89a614195fab0e8215",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8da89a614195fab0e8214",
+      "variantOrder": [
+        "68f8da89a614195fab0e8216"
+      ],
+      "createdAt": "2025-10-22T13:22:17.000Z"
+    },
+    {
+      "id": "68f8daa8a614195fab0e821e",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8daa8a614195fab0e821d",
+      "variantOrder": [
+        "68f8daa8a614195fab0e821f"
+      ],
+      "createdAt": "2025-10-22T13:22:48.000Z"
+    },
+    {
+      "id": "68f8daa8a614195fab0e8221",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8daa8a614195fab0e8220",
+      "variantOrder": [
+        "68f8daa8a614195fab0e8222"
+      ],
+      "createdAt": "2025-10-22T13:22:49.000Z"
+    },
+    {
+      "id": "68f8daa7a614195fab0e8218",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8daa7a614195fab0e8217",
+      "variantOrder": [
+        "68f8daa7a614195fab0e8219"
+      ],
+      "createdAt": "2025-10-22T13:22:47.000Z"
+    },
+    {
+      "id": "68f8daa7a614195fab0e821b",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8daa7a614195fab0e821a",
+      "variantOrder": [
+        "68f8daa7a614195fab0e821c"
+      ],
+      "createdAt": "2025-10-22T13:22:48.000Z"
+    },
+    {
+      "id": "68f8dae97b6480cb5deaa998",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8dae97b6480cb5deaa997",
+      "variantOrder": [
+        "68f8dae97b6480cb5deaa999"
+      ],
+      "createdAt": "2025-10-22T13:23:54.000Z"
+    },
+    {
+      "id": "68f8db417b6480cb5deaa9b9",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68f8db417b6480cb5deaa9b8",
+      "variantOrder": [
+        "68f8db417b6480cb5deaa9ba"
+      ],
+      "createdAt": "2025-10-22T13:25:22.000Z"
+    },
+    {
+      "id": "68d13269711621df57417fd0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d13269711621df57417fcf",
+      "variantOrder": [
+        "68d13269711621df57417fd1"
+      ],
+      "createdAt": "2025-09-22T11:26:33.000Z"
+    },
+    {
+      "id": "68d1339a711621df5741809c",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d1339a711621df5741809b",
+      "variantOrder": [
+        "68d1339a711621df5741809d"
+      ],
+      "createdAt": "2025-09-22T11:31:38.000Z"
+    },
+    {
+      "id": "68d134a2711621df57418169",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d134a2711621df57418168",
+      "variantOrder": [
+        "68d134a2711621df5741816a"
+      ],
+      "createdAt": "2025-09-22T11:36:03.000Z"
+    },
+    {
+      "id": "68d1340e711621df574180eb",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d1340e711621df574180ea",
+      "variantOrder": [
+        "68d1340e711621df574180ec"
+      ],
+      "createdAt": "2025-09-22T11:33:35.000Z"
+    },
+    {
+      "id": "68d13549711621df57418212",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d13549711621df57418211",
+      "variantOrder": [
+        "68d13549711621df57418213"
+      ],
+      "createdAt": "2025-09-22T11:38:50.000Z"
+    },
+    {
+      "id": "68d136f7711621df574183c3",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d136f7711621df574183c2",
+      "variantOrder": [
+        "68d136f7711621df574183c4"
+      ],
+      "createdAt": "2025-09-22T11:46:00.000Z"
+    },
+    {
+      "id": "68e79fea72d621c3ae322d86",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68e79fea72d621c3ae322d85",
+      "variantOrder": [
+        "68e79fea72d621c3ae322d87"
+      ],
+      "createdAt": "2025-10-09T11:43:38.000Z"
+    },
+    {
+      "id": "68e7964572d621c3ae322a94",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68e7964572d621c3ae322a93",
+      "variantOrder": [
+        "68e7964572d621c3ae322a95"
+      ],
+      "createdAt": "2025-10-09T11:02:29.000Z"
+    },
+    {
+      "id": "68e7968972d621c3ae322ab2",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68e7968972d621c3ae322ab1",
+      "variantOrder": [
+        "68e7968972d621c3ae322ab3"
+      ],
+      "createdAt": "2025-10-09T11:03:38.000Z"
+    },
+    {
+      "id": "68e7960472d621c3ae322a69",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68e7960472d621c3ae322a68",
+      "variantOrder": [
+        "68e7960472d621c3ae322a6a"
+      ],
+      "createdAt": "2025-10-09T11:01:24.000Z"
+    },
+    {
+      "id": "68e79636125c3775f6d936f5",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68e79636125c3775f6d936f4",
+      "variantOrder": [
+        "68e79636125c3775f6d936f6"
+      ],
+      "createdAt": "2025-10-09T11:02:14.000Z"
+    },
+    {
+      "id": "68e7992872d621c3ae322b76",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68e7992872d621c3ae322b75",
+      "variantOrder": [
+        "68e7992872d621c3ae322b77"
+      ],
+      "createdAt": "2025-10-09T11:14:49.000Z"
+    },
+    {
+      "id": "68d3fa8391c5ab19193c59aa",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d3fa8391c5ab19193c59a9",
+      "variantOrder": [
+        "68d3fa8391c5ab19193c59ab"
+      ],
+      "createdAt": "2025-09-24T14:04:52.000Z"
+    },
+    {
+      "id": "68d3faa391c5ab19193c59d9",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d3faa391c5ab19193c59d8",
+      "variantOrder": [
+        "68d3faa391c5ab19193c59da"
+      ],
+      "createdAt": "2025-09-24T14:05:24.000Z"
+    },
+    {
+      "id": "68d4041d91c5ab19193c6049",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d4041d91c5ab19193c6048",
+      "variantOrder": [
+        "68d4041d91c5ab19193c604a"
+      ],
+      "createdAt": "2025-09-24T14:45:50.000Z"
+    },
+    {
+      "id": "68d579a90904a8a7a6cd3cbf",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d579a90904a8a7a6cd3cbe",
+      "variantOrder": [
+        "68d579a90904a8a7a6cd3cc0"
+      ],
+      "createdAt": "2025-09-25T17:19:37.000Z"
+    },
+    {
+      "id": "68d579e60904a8a7a6cd3cda",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d579e60904a8a7a6cd3cd9",
+      "variantOrder": [
+        "68d579e60904a8a7a6cd3cdb"
+      ],
+      "createdAt": "2025-09-25T17:20:38.000Z"
+    },
+    {
+      "id": "68d56e740904a8a7a6cd331a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d56e740904a8a7a6cd3319",
+      "variantOrder": [
+        "68d56e740904a8a7a6cd331b"
+      ],
+      "createdAt": "2025-09-25T16:31:49.000Z"
+    },
+    {
+      "id": "68d56ef50904a8a7a6cd343a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d56ef50904a8a7a6cd3439",
+      "variantOrder": [
+        "68d56ef50904a8a7a6cd343b"
+      ],
+      "createdAt": "2025-09-25T16:33:57.000Z"
+    },
+    {
+      "id": "68d572850904a8a7a6cd3847",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d572850904a8a7a6cd3846",
+      "variantOrder": [
+        "68d572850904a8a7a6cd3848"
+      ],
+      "createdAt": "2025-09-25T16:49:10.000Z"
+    },
+    {
+      "id": "68d578e90904a8a7a6cd3c4c",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d578e90904a8a7a6cd3c4b",
+      "variantOrder": [
+        "68d578e90904a8a7a6cd3c4d"
+      ],
+      "createdAt": "2025-09-25T17:16:26.000Z"
+    },
+    {
+      "id": "68d5793473eb39bd5ea71b93",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d5793473eb39bd5ea71b92",
+      "variantOrder": [
+        "68d5793473eb39bd5ea71b94"
+      ],
+      "createdAt": "2025-09-25T17:17:40.000Z"
+    },
+    {
+      "id": "68d5793c73eb39bd5ea71b96",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d5793c73eb39bd5ea71b95",
+      "variantOrder": [
+        "68d5793c73eb39bd5ea71b97"
+      ],
+      "createdAt": "2025-09-25T17:17:48.000Z"
+    },
+    {
+      "id": "68d5794373eb39bd5ea71b99",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d5794373eb39bd5ea71b98",
+      "variantOrder": [
+        "68d5794373eb39bd5ea71b9a"
+      ],
+      "createdAt": "2025-09-25T17:17:55.000Z"
+    },
+    {
+      "id": "68d5795773eb39bd5ea71b9c",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68d5795773eb39bd5ea71b9b",
+      "variantOrder": [
+        "68d5795773eb39bd5ea71b9d"
+      ],
+      "createdAt": "2025-09-25T17:18:15.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cbf84fd4b73f0bb089f2ad",
+      "name": "id",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T12:17:20.000Z",
+      "updatedAt": "2025-09-18T12:17:20.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "vf_date",
+      "name": "vf_date",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "date",
+      "description": "Current date in the format \"Jan 1, 2025\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-01T10:27:52.000Z",
+      "updatedAt": "2025-11-01T10:27:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "vf_time",
+      "name": "vf_time",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Current time in the format \"16:37\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-01T10:27:52.000Z",
+      "updatedAt": "2025-11-01T10:27:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "vf_day",
+      "name": "vf_day",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "Current day of month in the format \"1\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-01T10:27:52.000Z",
+      "updatedAt": "2025-11-01T10:27:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "vf_month",
+      "name": "vf_month",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Current month in the format \"January\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-01T10:27:52.000Z",
+      "updatedAt": "2025-11-01T10:27:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "vf_year",
+      "name": "vf_year",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "Current year in the format \"2025\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-01T10:27:52.000Z",
+      "updatedAt": "2025-11-01T10:27:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "vf_now",
+      "name": "vf_now",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "date",
+      "description": "Current date and time in the format \"Jan 1, 2025, 16:37\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2025-11-01T10:27:52.000Z",
+      "updatedAt": "2025-11-01T10:27:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "vf_user_timezone",
+      "name": "vf_user_timezone",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's timezone in the format \"America/Toronto\", if available. Defaults to the project timezone.",
+      "defaultValue": null,
+      "createdAt": "2025-11-01T10:27:52.000Z",
+      "updatedAt": "2025-11-01T10:27:52.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cc0168e763d8103577c42d",
+      "name": "number",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T12:56:08.000Z",
+      "updatedAt": "2025-09-18T12:56:08.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cc05c1e763d8103577c622",
+      "name": "name",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T13:14:41.000Z",
+      "updatedAt": "2025-09-18T13:14:41.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cc05dde763d8103577c624",
+      "name": "membership",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T13:15:10.000Z",
+      "updatedAt": "2025-09-18T13:15:10.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68cc05f6e763d8103577c629",
+      "name": "status",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-18T13:15:34.000Z",
+      "updatedAt": "2025-09-18T13:15:34.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d226a861b366a3ec77642a",
+      "name": "Row_num",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-23T04:48:41.000Z",
+      "updatedAt": "2025-09-23T04:48:41.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d56ede0904a8a7a6cd341c",
+      "name": "reply",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T16:33:35.000Z",
+      "updatedAt": "2025-09-25T16:33:35.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d573400904a8a7a6cd38da",
+      "name": "choice",
+      "createdByID": 226281,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-09-25T16:52:16.000Z",
+      "updatedAt": "2025-09-25T16:52:16.000Z",
+      "updatedByID": 226281
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66df755be937eb000784abb2",
+      "name": "Start workflow",
+      "createdByID": 226281,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": "",
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-11-24T10:52:56.000Z",
+      "updatedByID": 226281
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "agents": [
+    {
+      "id": "67db2b56cbe88befffef4623",
+      "name": "Customer support specialist",
+      "createdByID": 226281,
+      "folderID": null,
+      "settings": {},
+      "description": "An agent template for resolving issues and ensuring customer satisfaction with technical skill and empathy.",
+      "instructions": [
+        {
+          "text": [
+            "# Customer Service & Support Agent Prompt\n\n## Identity & Purpose\n\nYou are Laura, a customer service voice assistant for AcmeSolutions. Your primary purpose is to help customers resolve issues with their products, answer questions about services, and ensure a satisfying support experience.\n\n## Voice & Persona\n\n### Personality\n- Sound friendly, patient, and knowledgeable without being condescending\n- Use a conversational tone with natural speech patterns, including occasional \"hmm\" or \"let me think about that\" to simulate thoughtfulness\n- Speak with confidence but remain humble when you don't know something\n- Demonstrate genuine concern for customer issues\n\n### Speech Characteristics\n- Use contractions naturally (I'm, we'll, don't, etc.)\n- Vary your sentence length and complexity to sound natural\n- Include occasional filler words like \"actually\" or \"essentially\" for authenticity\n- Speak at a moderate pace, slowing down for complex information\n\n## Conversation Flow\n\n### Introduction\nStart with: \"Hi there, this is Laura from AcmeSolutions customer support. How can I help you today?\"\n\nIf the customer sounds frustrated or mentions an issue immediately, acknowledge their feelings: \"I understand that's frustrating. I'm here to help get this sorted out for you.\"\n\n### Issue Identification\n1. Use open-ended questions initially: \"Could you tell me a bit more about what's happening with your [product/service]?\"\n2. Follow with specific questions to narrow down the issue: \"When did you first notice this problem?\" or \"Does this happen every time you use it?\"\n3. Confirm your understanding: \"So if I understand correctly, your [product] is [specific issue] when you [specific action]. Is that right?\"\n\n### Troubleshooting\n1. Start with simple solutions: \"Let's try a few basic troubleshooting steps first.\"\n2. Provide clear step-by-step instructions: \"First, I'd like you to... Next, could you...\"\n3. Check progress at each step: \"What are you seeing now on your screen?\"\n4. Explain the purpose of each step: \"We're doing this to rule out [potential cause].\"\n\n### Resolution\n1. For resolved issues: \"Great! I'm glad we were able to fix that issue. Is everything working as expected now?\"\n2. For unresolved issues: \"Since we haven't been able to resolve this with basic troubleshooting, I'd recommend [next steps].\"\n3. Offer additional assistance: \"Is there anything else about your [product/service] that I can help with today?\"\n\n### Closing\nEnd with: \"Thank you for contacting AcmeSolutions support. If you have any other questions or if this issue comes up again, please don't hesitate to call us back. Have a great day!\"\n\n## Response Guidelines\n\n- Keep responses conversational and under 30 words when possible\n- Ask only one question at a time to avoid overwhelming the customer\n- Use explicit confirmation for important information: \"So the email address on your account is example@email.com, is that correct?\"\n- Avoid technical jargon unless the customer uses it first, then match their level of technical language\n- Express empathy for customer frustrations: \"I completely understand how annoying that must be.\"\n\n## Scenario Handling\n\n### For Common Technical Issues\n1. Password resets: Walk customers through the reset process, explaining each step\n2. Account access problems: Verify identity using established protocols, then troubleshoot login issues\n3. Product malfunction: Gather specific details about what's happening, when it started, and what changes were made recently\n4. Billing concerns: Verify account details first, explain charges clearly, and offer to connect with billing specialists if needed\n\n### For Frustrated Customers\n1. Let them express their frustration without interruption\n2. Acknowledge their feelings: \"I understand you're frustrated, and I would be too in this situation.\"\n3. Take ownership: \"I'm going to personally help get this resolved for you.\"\n4. Focus on solutions rather than dwelling on the problem\n5. Provide clear timeframes for resolution\n\n### For Complex Issues\n1. Break down complex problems into manageable components\n2. Address each component individually\n3. Provide a clear explanation of the issue in simple terms\n4. If technical expertise is required: \"This seems to require specialized assistance. Would it be okay if I connect you with our technical team who can dive deeper into this issue?\"\n\n### For Feature/Information Requests\n1. Provide accurate, concise information about available features\n2. If uncertain about specific details: \"That's a good question about [feature]. To give you the most accurate information, let me check our latest documentation on that.\"\n3. For unavailable features: \"Currently, our product doesn't have that specific feature. However, we do offer [alternative] which can help accomplish [similar goal].\"\n\n## Knowledge Base\n\n### Product Information\n- AcmeSolutions offers software services for productivity, security, and business management\n- Our flagship products include TaskMaster Pro (productivity), SecureShield (security), and BusinessFlow (business management)\n- All products have desktop and mobile applications\n- Subscription tiers include Basic, Premium, and Enterprise\n- Support hours are Monday through Friday, 8am to 8pm Eastern Time, and Saturday 9am to 5pm\n\n### Common Solutions\n- Most connectivity issues can be resolved by signing out completely, clearing browser cache, and signing back in\n- Performance problems often improve after restarting the application and ensuring the operating system is updated\n- Data synchronization issues typically resolve by checking internet connection and forcing a manual sync\n- Most mobile app problems can be fixed by updating to the latest version or reinstalling the application\n\n### Account Management\n- Customers can upgrade or downgrade their subscription through their account dashboard\n- Billing occurs on the same day each month based on signup date\n- Payment methods can be updated through the account settings page\n- Free trials last for 14 days and require payment information to activate\n\n### Limitations\n- You cannot process refunds directly but can escalate to the billing department\n- You cannot make changes to account ownership\n- You cannot provide technical support for third-party integrations not officially supported\n- You cannot access or view customer passwords for security reasons\n\n## Response Refinement\n\n- When explaining technical concepts, use analogies when helpful: \"Think of this feature like an automatic filing system for your digital documents.\"\n- For step-by-step instructions, number each step clearly and confirm completion before moving to the next\n- When discussing pricing or policies, be transparent and direct while maintaining a friendly tone\n- If the customer needs to wait (for system checks, etc.), explain why and provide time estimates\n\n## Call Management\n\n- If background noise interferes with communication: \"I'm having a little trouble hearing you clearly. Would it be possible to move to a quieter location or adjust your microphone?\"\n- If you need time to locate information: \"I'd like to find the most accurate information for you. Can I put you on a brief hold while I check our latest documentation on this?\"\n- If the call drops, attempt to reconnect and begin with: \"Hi there, this is Laura again from AcmeSolutions. I apologize for the disconnection. Let's continue where we left off with [last topic].\"\n\nRemember that your ultimate goal is to resolve customer issues efficiently while creating a positive, supportive experience that reinforces their trust in AcmeSolutions."
+          ]
+        }
+      ],
+      "pathToolOrder": [],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Triggered the knowledge base when you don't know the answer to a question."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-18T11:45:27.000Z",
+      "updatedAt": "2025-09-18T11:45:27.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d56f0e0904a8a7a6cd3452",
+      "name": "Gym Bot",
+      "createdByID": 226281,
+      "folderID": null,
+      "settings": {
+        "model": "gpt-3.5-turbo",
+        "maxTokens": 256,
+        "temperature": 0.15,
+        "reasoningEffort": null
+      },
+      "description": "",
+      "instructions": [
+        {
+          "text": [
+            "You are Max, a dedicated fitness facility customer support AI assistant. Your primary responsibility is to provide accurate and helpful responses to user inquiries.\n\nRole and Objective\n\nYou are a customer support specialist for gym facilities.\n\nYour responses must be based exclusively on the information contained in the gym knowledge base.\n\nYou should maintain a professional, friendly, and helpful tone in all interactions.\n\nInstructions\n\nAlways begin by searching the knowledge base for relevant information before responding.\n\nOnly provide information that is explicitly present in the knowledge base.\n\nIf information is not available, politely inform the user and suggest they contact the gym directly.\n\nKeep responses clear, concise, short and focused on addressing the user's specific question.\n\nMaintain a professional yet friendly tone throughout the conversation.\n\nDo not make assumptions or provide information that isn't explicitly stated.\n\nResponse Rules\n\nStart each response by understanding the user's query and searching the knowledge base.\n\nNever tell the user that \"According to the knowledge base provided...\" anywhere in the message.\n\nStructure your responses in a clear, short and easy-to-read format.\n\nInclude relevant details from the knowledge base when applicable.\n\nIf multiple pieces of information are relevant, organize them in a logical order.\n\nAlways verify information against the knowledge base before including it in your response.\n\nOutput Format\n\nYour responses should follow this structure:\n\nDirect answer to the user's question.\n\nAdditional relevant information from the knowledge base (if applicable).\n\nNext steps or recommendations (based on knowledge base content).\n\nContact information or escalation path (if needed).\n\nIn case you are unable to find the relevant answer to the question provided in the knowledge base, provide the user with the contact details to reach the gym directly.\n\nFinal Instructions\n\nThink step by step before responding.\n\nDouble-check that your response aligns with the knowledge base.\n\nMaintain consistency in tone and information accuracy.\n\nIf unsure about any information, err on the side of caution and suggest contacting the gym directly.\n\nRemember: Your primary goal is to provide accurate, helpful information while strictly adhering to the content available in the knowledge base. Never make assumptions or provide information that isn't explicitly stated."
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68e763d472d621c3ae321f22"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T16:34:23.000Z",
+      "updatedAt": "2025-10-09T07:27:16.000Z",
+      "updatedByID": 226281
+    },
+    {
+      "id": "68d5702a0904a8a7a6cd3587",
+      "name": "Untitled agent",
+      "createdByID": 226281,
+      "folderID": null,
+      "settings": {},
+      "description": null,
+      "instructions": null,
+      "pathToolOrder": [],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "callForwardTool": null,
+      "createdAt": "2025-09-25T16:39:07.000Z",
+      "updatedAt": "2025-09-25T16:39:07.000Z",
+      "updatedByID": 226281
+    }
+  ],
+  "agentAPITools": [],
+  "agentPathTools": [
+    {
+      "id": "68e763d472d621c3ae321f22",
+      "name": "Exiting",
+      "agentID": "68d56f0e0904a8a7a6cd3452",
+      "description": "Exit/End the conversation When users types \"Exit\"",
+      "variableOrder": [],
+      "createdAt": "2025-10-09T07:27:16.000Z"
+    }
+  ],
+  "agentFunctionTools": [],
+  "agentIntegrationTools": [],
+  "agentPathToolVariables": [],
+  "agentMcpIntegrationTools": [],
+  "apiTools": [],
+  "apiToolInputVariables": [],
+  "integrationTools": [
+    {
+      "id": "68eb47c5ff97cf74d086d3a6",
+      "name": "Update sheet",
+      "createdByID": 226281,
+      "folderID": null,
+      "toolName": "google_sheets_update_spreadsheet",
+      "description": "Update or insert rows in a sheet.",
+      "toolProvider": "google_sheets",
+      "createdAt": "2025-10-12T06:16:38.000Z",
+      "updatedAt": "2025-10-12T06:16:38.000Z",
+      "updatedByID": 226281
+    }
+  ],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "mcpServers": [],
+  "mcpServerTools": [],
+  "mcpIntegrationTools": [],
+  "project": {
+    "type": "chat",
+    "name": "Gym_Demo",
+    "image": "https://cm4-production-assets.s3.amazonaws.com/1729190521409-square-onyx-1024.jpg",
+    "teamID": "0NjXaYXVnq",
+    "members": [],
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 226281,
+    "updatedBy": 226281,
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [
+      {
+        "name": "",
+        "palette": {
+          "50": "#f7f1a8",
+          "100": "#ebe5a0",
+          "200": "#dcd796",
+          "300": "#cec98b",
+          "400": "#b7b37c",
+          "500": "#a19d6c",
+          "600": "#89855b",
+          "700": "#6c6947",
+          "800": "#4e4c33",
+          "900": "#302f1d"
+        },
+        "standardColor": "#a19d6c"
+      },
+      {
+        "name": "",
+        "palette": {
+          "50": "#eeedf6",
+          "100": "#e2e1f1",
+          "200": "#d4d2ea",
+          "300": "#c7c3e3",
+          "400": "#b1acd9",
+          "500": "#9b94ce",
+          "600": "#847bc1",
+          "700": "#695daf",
+          "800": "#4c408d",
+          "900": "#2f265b"
+        },
+        "standardColor": "#9b94ce"
+      }
+    ],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "privacy": "private",
+    "apiPrivacy": "public",
+    "_id": "68cbf0d6d4b73f0bb089ef5d",
+    "updatedAt": "2025-10-29T09:58:37.944Z",
+    "devVersion": "68cbf0d6d4b73f0bb089ef5e",
+    "liveVersion": "68cbf0d6d4b73f0bb089ef5f"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": [],
+  "transcriptEvaluations": [
+    {
+      "name": "Deflection rate",
+      "default": true,
+      "description": null,
+      "type": "boolean",
+      "enabled": false,
+      "prompt": "Determine if the user requested to talk to a human in order to achieve their desired outcome.",
+      "settings": null,
+      "systemTag": null,
+      "truePrompt": "The user did not require the need to talk to a human.",
+      "falsePrompt": "The user required the need to talk to a human agent."
+    },
+    {
+      "name": "AI summary",
+      "default": true,
+      "description": null,
+      "type": "string",
+      "enabled": false,
+      "prompt": "Look at the transcript and provide a brief summary of the conversation. Make sure to highlight the outcome of the conversation, and key moments or topics, and the overall tone of the customer.",
+      "settings": null,
+      "systemTag": null
+    },
+    {
+      "name": "Satisfaction score",
+      "default": true,
+      "description": null,
+      "type": "number",
+      "enabled": false,
+      "prompt": "Rate the user's overall satisfaction based on the conversation, using a scale from 1 to 5.",
+      "settings": null,
+      "systemTag": null,
+      "minimumValue": 1,
+      "minimumPrompt": "Look for negative comments or expressions of dissatisfaction to rate the minimum satisfaction.",
+      "maximumValue": 5,
+      "maximumPrompt": "Identify any comments or phrases in the transcript that express the highest level of satisfaction."
+    }
+  ]
+}
